@@ -1,5 +1,6 @@
 .env
 .idea/
-./vscode
-./vendor/
-./temp/
+
+/vscode
+/vendor
+/temp
