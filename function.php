@@ -2,4 +2,16 @@
 
 $_ENV = parse_ini_file('./.env');
 
-// $conn = new PDO("mysql:host={$_ENV['HOST']}; dbname={$_ENV['DATABASE']}", $_ENV['USER'], $_ENV['PASSWORD']);
+require './vendor/autoload.php';
+
+function twig()
+{
+    $loader = new Twig\Loader\FilesystemLoader(__DIR__ . '/templates');
+    $twig = new Twig\Environment($loader, [
+        'debug' => true,
+        'cache' => __DIR__ . '/temp' 
+    ]);
+    $twig->addExtension(new Twig\Extension\DebugExtension());
+
+    return $twig;
+}

@@ -1,5 +1,3 @@
-<?php require './function.php' ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,13 +8,13 @@
 
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="./assets/libs/semantic/semantic.min.css">
 
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+    <!-- <script src="./assets/libs/bootstrap/bootstrap.min.js"></script> -->
     <script src="./assets/libs/semantic/semantic.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/style.css">

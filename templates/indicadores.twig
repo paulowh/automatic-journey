@@ -1,0 +1,9 @@
+<select class="mt-5 ui fluid search dropdown indi" multiple="" >
+    {% for dados in indicador %}
+        <option value="{{ dados.id }}"> {{ dados.titulo }} </option>
+    {% endfor %}
+</select>
+
+<script>
+$('.indi').dropdown()
+</script>

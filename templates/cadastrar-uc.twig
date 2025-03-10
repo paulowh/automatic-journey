@@ -1,0 +1,23 @@
+<select class="mt-5 ui fluid search selection dropdown" id="select-uc">
+    {% for uc in ucs %}
+        <option value="{{ uc.id }}">{{ uc.titulo }}</option>
+    {% endfor %}
+</select>
+
+<div class="result"></div>
+
+<script>
+    $('.dropdown').dropdown();
+    $('.ui.dropdown').change(function() {
+        var valorSelecionado = $(this).dropdown('get value'); // Pega o valor selecionado
+        console.log(valorSelecionado);
+
+        $.post("./indicadores.php", {
+            id: valorSelecionado
+        }, function(data) {
+            console.log(data);
+            
+            $(".result").html(data);
+        });
+    })
+</script>
