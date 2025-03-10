@@ -1,8 +1,10 @@
-<select class="mt-5 ui fluid search selection dropdown" id="select-uc">
-    {% for uc in ucs %}
-        <option value="{{ uc.id }}">{{ uc.titulo }}</option>
-    {% endfor %}
-</select>
+<div>
+	<select class="ui fluid search selection dropdown" id="select-uc">
+		{% for uc in ucs %}
+			<option value="{{ uc.id }}">{{ uc.titulo }}</option>
+		{% endfor %}
+	</select>
+</div>
 
 <div class="result"></div>
 

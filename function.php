@@ -2,7 +2,7 @@
 
 $_ENV = parse_ini_file('./.env');
 
-require './vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 function twig()
 {

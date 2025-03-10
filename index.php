@@ -10,5 +10,19 @@ $ucs = $unidade->consultaUc();
 
 $twig = twig();
 
-echo $twig->render('cadastrar-uc.twig', ['ucs' => $ucs]);
+?>
 
+
+<main>
+    <form action="#" class="mt-5 ui form">
+        <div>
+
+            <?= $twig->render('cadastrar-uc.twig', ['ucs' => $ucs]); ?>
+            <textarea class="field" name="descricao" id="descricao"></textarea>
+
+
+            <input type="submit">
+
+        </div>
+    </form>
+</main>
