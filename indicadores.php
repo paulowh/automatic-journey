@@ -10,4 +10,6 @@ $dados = $indicador->consultarIndicadorByUc($id);
 
 $twig = twig();
 
-echo $twig->render('indicadores.twig', ['indicador' => $dados]);
+if (!empty($dados)) {
+    echo $twig->render('indicadores.twig', ['indicador' => $dados]);
+}
